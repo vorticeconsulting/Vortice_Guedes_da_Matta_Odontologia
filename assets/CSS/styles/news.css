@@ -1,0 +1,126 @@
+.search {
+    margin: 0 5rem 5rem 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.search__title {
+    font-size: 64px;
+    font-weight: 700;
+}
+
+.search__description {
+    font-size: 16.5px;
+    font-weight: 500;
+    color: var(--fonte-color-secundaria);
+    line-height: 140%;
+    margin: 3rem 13rem 4rem 0;
+}
+
+.search__searchbar {
+    width: 31vw;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.3rem;
+    border: 1px solid var(--roxo-secundario);
+    border-radius: 15.5px;
+}
+
+.searchbar__input {
+    width: 25vw;
+    border: transparent;
+    border-radius: 12px;
+    padding-left: 0.8rem;
+    caret-color: var(--roxo);
+}
+
+.searchbar__button {
+    display: flex;
+    justify-content: space-between;
+    gap: 0.3rem;
+    padding: 0.9rem 1rem;
+    color: var(--branco);
+    background-color: var(--roxo);
+    font-weight: 500;
+    border: none;
+    border-radius: 13.5px;
+    cursor: pointer;
+}
+
+/*======Articles======*/
+.articles {
+    margin: 8rem 4rem;
+}
+
+.articles__title {
+    font-size: 48px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.articles__list {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 33.33% 33.33% 33.33%;
+    row-gap: 2.5rem;
+    margin: 4rem 0;
+}
+
+.article {
+    justify-self: center;
+}
+
+.article-img1 {
+    background-image: url("/assets/Img/New/news-1.png");
+}
+
+.article-img2 {
+    background-image: url("/assets/Img/New/news-2.png");
+}
+
+.article-img3 {
+    background-image: url("/assets/Img/New/news-3.png");
+}
+
+.article-img4 {
+    background-image: url("/assets/Img/New/news-4.png");
+}
+
+.article-img5 {
+    background-image: url("/assets/Img/New/news-5.png");
+}
+
+.article-img6 {
+    background-image: url("/assets/Img/New/news-6.png");
+}
+
+.articles__next--list {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.articles__next--item-active {
+    background-color: var(--roxo);
+    color: var(--branco);
+}
+
+.articles__next--item {
+    width: 3.4vw;
+    height: 3.4vw;
+    border: 1px solid var(--roxo-secundario);
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.articles__next--item:hover {
+    background-color: var(--roxo);
+    color: var(--branco);
+}

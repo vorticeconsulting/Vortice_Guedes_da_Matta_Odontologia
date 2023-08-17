@@ -1,0 +1,244 @@
+.aboutUs {
+    padding: 3rem 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.aboutUs__title {
+    font-size: 64px;
+    font-weight: 700;
+}
+
+.aboutUs__description {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 140%;
+    color: var(--fonte-color-secundaria);
+    margin: 2.7rem 0 8rem 0;
+}
+
+.aboutUs__button {
+    padding: 1.3rem 5rem;
+    color: var(--branco);
+    font-weight: 700;
+    text-decoration: none;
+    background-color: var(--roxo);
+    border-radius: 18px;
+}
+
+/*======Priority======*/
+
+.priority {
+    padding: 7rem 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.priority__container {
+    margin-right: 6.5em;
+}
+
+.priority__title {
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.priority__description {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 140%;
+    color: var(--fonte-color-secundaria);
+    margin: 2.7rem 0 6rem 0;
+}
+
+.priority__button {
+    padding: 1.3rem 2.8rem;
+    color: var(--branco);
+    font-weight: 700;
+    text-decoration: none;
+    background-color: var(--roxo);
+    border-radius: 18px;
+}
+
+/*======Safety======*/
+
+.safety {
+    padding: 0 4rem;
+    margin: 3rem 0;
+}
+
+.safety__container {
+    text-align: center;
+    background-image: url("/assets/Img/about/Rectangle\ 13.png");
+    background-position: top;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-bottom: 4rem;
+}
+
+.safety__title {
+    padding-top: 9rem;
+}
+
+.safety__subtitle {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 2.2rem;
+    margin-top: 0.5rem;
+}
+
+.safety__description{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 150%;
+    margin-bottom: 4.7rem;
+}
+
+.safety__video {
+    border-radius: 32px;
+    cursor: pointer;
+}
+
+/*======Teams======*/
+
+.team {
+    padding: 1rem 3rem;
+    margin: 6rem 0;
+}
+
+.team__grid {
+    display: grid;
+    grid-template-rows: auto auto auto;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-areas: 
+        "title title title title"
+        "subtitle subtitle description description"
+        "card card card card";
+}
+
+.team__title {
+    grid-area: title;
+    margin-left: 1.9rem;
+}
+
+.team__subtitle {
+    font-size: 48px;
+    font-weight: 700;
+    grid-area: subtitle;
+    margin-bottom: 6rem;
+    margin-left: 1.9rem;
+}
+
+.team__description {
+    font-weight: 500;
+    font-size: 14.5px;
+    line-height: 140%;
+    color: var(--fonte-color-secundaria);
+    grid-area: description;
+    margin-left: 6rem;
+}
+
+.team__card {
+    text-align: center;
+    padding: 0.1rem;
+}
+
+.team__card--img,
+.team__card--name {
+    cursor: pointer;
+}
+
+.team__card--img:hover {
+    width: 305px;
+    height: 365px;
+    transition: 1ms;
+}
+
+.team__card--name {
+    font-size: 18px;
+    font-weight: 700;
+    margin-top: 2rem;
+}
+
+/*======FAQ======*/
+
+.faq {
+    margin: 12rem 17rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.faq__title {
+    align-self: center;
+}
+
+.faq__subtitle {
+    font-size: 48px;
+    font-weight: 700;
+    align-self: center;
+    margin-bottom: 3rem;
+}
+
+.faq__questions--item,
+.faq__questions--item2,
+.faq__questions--item3,
+.faq__questions--item4,
+.faq__questions--item5 {
+    padding: 2rem 1rem 2rem 1rem;
+    border-bottom: 1px solid #96A0B5;
+    border-top: 1px solid #96A0B5;
+}
+
+.faq__questions--item-actv {
+    background: linear-gradient(180deg, rgba(219, 239, 250, 0.5) 0%, rgba(255, 249, 249, 0.2) 100%);
+    border-top: 2px solid var(--roxo);
+}
+
+.faq__question--item-contain {
+    display: flex;
+    justify-content: space-between;
+}
+
+.faq__question {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.faq__button,
+.faq__button2,
+.faq__button3,
+.faq__button4,
+.faq__button5 {
+    padding: 0.75rem;
+    background-image: url(/assets/Img/about/faq-open.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    cursor: pointer;
+}
+
+.faq__button--close {
+    background-image: url(/assets/Img/about/faq-close.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.faq__question--answer,
+.faq__question--answer2,
+.faq__question--answer3,
+.faq__question--answer4,
+.faq__question--answer5 {
+    display: none;
+}
+
+.faq__question--answer-actv {
+    display: flex;
+    font-size: 19px;
+    line-height: 130%;
+    color:#96A0B5;
+    margin-top: 1.5rem;
+    margin-bottom: 2rem;
+}

@@ -1,0 +1,122 @@
+.appointment {
+    gap: 2rem;
+}
+
+.contact-us {
+    margin: 0 2rem 12rem 2rem;
+}
+
+.contact-us__container {
+    background-image: url("/assets/Img/contact/contact-retangle-bg.png");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: contain;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    align-items: center;
+    padding: 1rem;
+    width: 100%;
+}
+
+.contact-us__title {
+    font-size: 64px;
+    font-weight: 700;
+    margin-top: 4rem;
+}
+
+.contact-us__description {
+    font-size: 16px;
+    line-height: 140%;
+    text-align: center;
+}
+
+.contact-us__forms {
+    background-color: var(--branco);
+    border-radius: 3rem;
+    padding: 3.8rem 7.5rem;
+    filter: drop-shadow(0px 100px 100px rgba(23, 24, 68, 0.04));
+}
+
+.contact-us__forms--list {
+    display: grid;
+    row-gap: 1.5rem;
+    column-gap: 3rem;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto;
+}
+
+.contact-us__forms--inputs {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-us__forms--inputs-textarea {
+    grid-column: span 2;
+}
+
+.contact-us__infos {
+    display: flex;
+    align-items: center;
+}
+
+.contact-us__forms--submit {
+    justify-self: center;
+    align-self: center;
+}
+
+.contactus__appointment--button {
+    color: var(--branco);
+    font-size: 15px;
+    font-weight: 500;
+    text-decoration: none;
+    padding: 1.3em 4.5em;
+    background-color: var(--roxo);
+    border-radius: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.clinic {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10rem;
+}
+
+.clinic__subtitle {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 5rem;
+}
+
+.clinic__wrapper {
+    display: flex;
+    gap: 3rem;
+}
+
+.clinic__card {
+    padding: 0.9rem;
+    border: 1px solid var(--roxo-secundario);
+    border-radius: 2.1rem;
+    text-align: center;
+    cursor: pointer;
+}
+
+.clinic__card:hover {
+    border: none;
+    box-shadow: 0px 62px 94px rgba(24, 25, 69, 0.05);
+}
+
+.clinic__card--title {
+    font-size: 16px;
+    font-weight: 700;
+    margin: 1.7rem 0 1.3rem 0;
+}
+
+.clinic__card--loc {
+    font-size: 15px;
+    color: var(--fonte-color-secundaria);
+    margin-bottom: 1rem;
+}
