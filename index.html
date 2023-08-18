@@ -1,555 +1,823 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="assets/CSS/reset.css">
-    <link rel="stylesheet" href="assets/CSS/styles.css">
-    <link rel="stylesheet" href="/assets/CSS/responsive.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/CSS/styles.css" />
+    <link rel="stylesheet" href="/assets/CSS/responsive.css" />
     <link rel="icon" type="imagem/png" href="assets/Img/Icon_site_gm.png" />
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
     <title>Guedes da Matta Odontologia</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <header class="header">
-        <img src="assets/Img/home/logo_site_gm.png" alt="Logo" class="logo">
-        <nav class="navbar">
-            <ul class="navbar__list">
-                <li class="navbar__list-item">
-                    <a href="assets/pages/about.html" class="navbar__list-link">Sobre Nós</a>
-                </li>
-                <li class="navbar__list-item">
-                    <a href="assets/pages/patient.html" class="navbar__list-link">Artigos</a>
-                </li>
-                <li class="navbar__list-item">
-                    <a href="assets/pages/services.html" class="navbar__list-link">Nossos Serviços</a>
-                </li>
-                <li class="navbar__list-item">
-                    <a href="assets/pages/contact.html" class="navbar__list-link">Entre em Contato</a>
-                </li>
-            </ul>
-        </nav>
+      <img src="assets/Img/home/logo_site_gm.png" alt="Logo" class="logo" />
+      <nav class="navbar">
+        <ul class="navbar__list">
+          <li class="navbar__list-item">
+            <a
+              onclick="close()"
+              href="assets/pages/about.html"
+              class="navbar__list-link"
+              >Sobre Nós</a
+            >
+          </li>
+          <li class="navbar__list-item">
+            <a
+              onclick="close()"
+              href="assets/pages/patient.html"
+              class="navbar__list-link"
+              >Artigos</a
+            >
+          </li>
+          <li class="navbar__list-item">
+            <a
+              onclick="close()"
+              href="assets/pages/services.html"
+              class="navbar__list-link"
+              >Nossos Serviços</a
+            >
+          </li>
+          <li class="navbar__list-item">
+            <a
+              onclick="close()"
+              href="assets/pages/contact.html"
+              class="navbar__list-link"
+              >Entre em Contato</a
+            >
+          </li>
+        </ul>
+
         <a href="#appointment" class="header__button">Tire suas Dúvidas</a>
+      </nav>
+
+      <button class="button-open-menu">
+        <i class="ph ph-list"></i>
+      </button>
+
+      <button class="close-menu-mobile">
+        <i class="ph ph-x"></i>
+      </button>
     </header>
     <main>
-        <section class="banner">
-            <div class="banner__img-wrap">
-                <h1 class="banner__title">Confie seu sorriso<br>
-                    a um profissional</h1>
-                <p class="banner__description">Confie em nossa equipe de dentistas experientes para cuidar do <br>seu
-                    sorriso com dedicação e expertise. <br>Com anos de prática e um compromisso com o seu conforto,
-                    <br>estamos
-                    aqui para oferecer tratamentos precisos <br>e personalizados, garantindo que você sorria <br>com
-                    confiança
-                    em cada etapa do processo.
+      <section class="banner">
+        <div class="banner__img-wrap">
+          <h1 class="banner__title">
+            Confie seu sorriso<br />
+            a um profissional
+          </h1>
+          <p class="banner__description">
+            Confie em nossa equipe de dentistas experientes para cuidar do
+            <br />seu sorriso com dedicação e expertise. <br />Com anos de
+            prática e um compromisso com o seu conforto, <br />estamos aqui para
+            oferecer tratamentos precisos <br />e personalizados, garantindo que
+            você sorria <br />com confiança em cada etapa do processo.
+          </p>
+          <div class="banner__contact">
+            <!-- <a href="#appointment" class="banner__button">Tire suas Dúvidas</a> -->
+            <div class="tel">
+              <a href="#" id="btnLigar">
+                <img
+                  src="assets/Img/home/phone.png"
+                  alt="telefone"
+                  class="banner__contact-img"
+                />
+              </a>
+              <span class="banner__contact--wrap">
+                <p class="banner__contact--desc">Ligue agora.</p>
+                <p class="banner__contact--number">32 3061 2136</p>
+              </span>
+            </div>
+
+            <div class="tel">
+              <a href="#" id="btnWhatsapp" target="_blank">
+                <img
+                  src="assets/Img/WhatsApp.png"
+                  alt="telefone"
+                  class="banner__contact-img"
+                />
+              </a>
+              <span class="banner__contact--wrap">
+                <p class="banner__contact--desc">Chama no WhatsApp.</p>
+                <p class="banner__contact--number">32 3061 2136</p>
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="banner__sub">
+          <h2 class="banner__subtitle">
+            Estamos refazendo o que é a experiência odontológica <br />e
+            orgulhosamente estabelecendo um novo padrão para <br />o cuidado ao
+            paciente.
+          </h2>
+          <img
+            src="assets/Img/home/line1.svg"
+            alt="Linha"
+            class="banner__subtitle--line"
+          />
+        </div>
+      </section>
+      <section class="services">
+        <h2 class="section__title">ESPECIALIDADES</h2>
+        <div class="services__subtitle--wrap">
+          <h3 class="services__subtitle">
+            Sinta-se bem com <br />sua saúde bucal
+          </h3>
+          <p class="services__description">
+            Um sorriso saudável é o reflexo do seu bem-estar geral. Cuide da sua
+            saúde bucal <br />com atenção e prevenção, garantindo não apenas
+            dentes fortes e brilhantes, <br />mas também uma vida cheia de
+            confiança e conforto. <br />Invista na sua saúde bucal hoje para
+            colher os benefícios de um sorriso radiante amanhã.
+          </p>
+        </div>
+        <ul class="services__list">
+          <li class="services__list--item">
+            <div class="list__img--container dentures">
+              <img
+                src="assets/Img/home/dentures.png"
+                alt="Dentures"
+                class="list__img"
+              />
+            </div>
+            <h3 class="list__item--title">Próteses Dentárias</h3>
+            <p class="list__item--description">
+              Recupere o seu sorriso radiante e a confiança em si mesmo com as
+              nossas próteses dentárias de última geração! Feitas sob medida
+              para se adaptarem perfeitamente à sua boca, as nossas próteses
+              combinam conforto e estética para lhe proporcionar uma aparência
+              natural e uma mastigação eficaz. Desfrute de refeições deliciosas
+              e interações sociais sem preocupações. Deixe-nos ajudar você a
+              redescobrir o prazer de sorrir. <br /><b
+                >Agende a sua consulta hoje mesmo e embarque em uma jornada para
+                um sorriso renovado!</b
+              >
+            </p>
+          </li>
+          <li class="services__list--item">
+            <div class="list__img--container implants">
+              <img
+                src="assets/Img/home/implants.png"
+                alt="Implants"
+                class="list__img"
+              />
+            </div>
+            <h3 class="list__item--title">Implantes</h3>
+            <p class="list__item--description">
+              Transforme a sua vida com os implantes dentários revolucionários
+              que oferecemos! Tenha de volta a sua capacidade de mastigar, falar
+              e sorrir com confiança. Nossos especialistas altamente
+              qualificados garantem um processo seguro e confortável, adaptado
+              às suas necessidades individuais. Com tecnologia de ponta e
+              materiais duradouros, os nossos implantes proporcionam resultados
+              excepcionais. Não espere mais para recuperar a sua qualidade de
+              vida. <br /><b
+                >Agende a sua consulta e dê o primeiro passo em direção a um
+                sorriso radiante e funcional!</b
+              >
+            </p>
+          </li>
+          <li class="services__list--item">
+            <div class="list__img--container whitening">
+              <img
+                src="assets/Img/home/whitening.png"
+                alt="Whitening"
+                class="list__img"
+              />
+            </div>
+            <h3 class="list__item--title">Clareamento</h3>
+            <p class="list__item--description">
+              Descubra um sorriso mais brilhante e confiante com o nosso
+              tratamento de clareamento dentário de excelência! Deixe para trás
+              manchas e descolorações, e seja cativante em cada sorriso. Nossa
+              abordagem segura e eficaz oferece resultados visíveis em pouco
+              tempo, sob a supervisão de profissionais experientes. Realce a sua
+              beleza natural e ilumine o seu rosto com dentes radiantes. Não
+              adie mais a oportunidade de ter um sorriso deslumbrante. <br /><b
+                >Entre em contato conosco hoje mesmo e comece a jornada para um
+                sorriso mais branco e luminoso!</b
+              >
+            </p>
+          </li>
+          <li class="services__list--item">
+            <div class="list__img--container rootcanal">
+              <img
+                src="assets/Img/home/rootcanal.png"
+                alt="Root Canal"
+                class="list__img"
+              />
+            </div>
+            <h3 class="list__item--title">Tratamento de Canal</h3>
+            <p class="list__item--description">
+              Recupere o conforto e a saúde dos seus dentes com o nosso
+              tratamento de canal de excelência. Nossa equipe altamente
+              qualificada e equipamentos de última geração garantem uma
+              experiência livre de desconforto. Resolvemos eficazmente problemas
+              como dor intensa, inchaço e sensibilidade, restaurando a
+              vitalidade do seu sorriso. Não deixe que problemas dentários
+              prejudiquem sua qualidade de vida. <br /><b
+                >Agende agora mesmo a sua consulta e confie em nós para devolver
+                o seu sorriso ao seu melhor estado.</b
+              >
+            </p>
+          </li>
+        </ul>
+        <a href="/assets/pages/services.html" class="services__button"
+          >Veja toda a lista de serviços<img
+            src="/assets/Img/home/nexticon.svg"
+            alt=""
+        /></a>
+      </section>
+      <section class="dental24h">
+        <div class="dental24__img--container">
+          <img
+            src="assets/Img/home/Image_sonile_03.jpeg"
+            alt="Patient"
+            class="dental24__img"
+          />
+        </div>
+        <div class="dental24__container">
+          <h2 class="section__title">Atendimento de Emergência 24H</h2>
+          <h3 class="dental24h__subtitle">
+            Tratamento gentil e amigável <br />a todos os nossos pacientes.
+          </h3>
+          <p class="dental24h__description">
+            Descubra um tratamento odontológico que combina expertise
+            profissional com cuidado gentil e amigável. Nossa equipe está
+            empenhada em tornar cada visita uma experiência confortável,
+            atendendo às suas necessidades com delicadeza. <br />Dê um passo em
+            direção a um sorriso saudável e positivo, onde o seu conforto é a
+            nossa prioridade.
+          </p>
+          <a href="#appointment" class="dental24h__button">Tire suas Dúvidas</a>
+        </div>
+      </section>
+      <section class="features">
+        <div class="features__container">
+          <div class="features__container--title">
+            <h2 class="section__title">ESPECIALISTAS</h2>
+            <h3 class="features__subtitle">
+              Atendimento especializado e experiente
+            </h3>
+            <p class="features__description">
+              Experimente a excelência do tratamento odontológico especializado
+              e altamente experiente que oferecemos. <br />Nossa equipe dedicada
+              de profissionais qualificados está comprometida em fornecer
+              soluções precisas <br />e personalizadas para todas as suas
+              necessidades dentárias. <br />Confie em nós para transformar o seu
+              sorriso com conhecimento e cuidado especializado.
+            </p>
+          </div>
+          <ul class="features__list">
+            <li class="features__list--item">
+              <img
+                src="assets/Img/home/safety.png"
+                alt="Safety"
+                class="features__list--img"
+              />
+              <span class="features__list--wrap">
+                <h3 class="features__item-title">Segurança Total</h3>
+                <p class="features__item-desc">
+                  Priorizamos sua segurança com nosso controles de qualidade
+                  <br />de alto padrão
                 </p>
-                <div class="banner__contact">
-                    <!-- <a href="#appointment" class="banner__button">Tire suas Dúvidas</a> -->
-                    <div class="tel">
-                        <a href="#" id="btnLigar">
-                            <img src="assets/Img/home/phone.png" alt="telefone" class="banner__contact-img">
-                        </a>
-                        <span class="banner__contact--wrap">
-                            <p class="banner__contact--desc">Ligue agora.</p>
-                            <p class="banner__contact--number">32 3061 2136</p>
-                        </span>
-                    </div>
-
-                    <div class="tel">
-                        <a href="#" id="btnWhatsapp" target="_blank">
-                            <img src="assets/Img/WhatsApp.png" alt="telefone" class="banner__contact-img">
-                        </a>
-                        <span class="banner__contact--wrap">
-                            <p class="banner__contact--desc">Chama no WhatsApp.</p>
-                            <p class="banner__contact--number">32 3061 2136</p>
-                        </span>
-                    </div>
-
-
-                </div>
-            </div>
-            <div class="banner__sub">
-                <h2 class="banner__subtitle">Estamos refazendo o que é a experiência odontológica
-                    <br>e orgulhosamente estabelecendo um novo padrão para
-                    <br>o cuidado ao paciente.
-                </h2>
-                <img src="assets/Img/home/line1.svg" alt="Linha" class="banner__subtitle--line">
-            </div>
-        </section>
-        <section class="services">
-            <h2 class="section__title">ESPECIALIDADES</h2>
-            <div class="services__subtitle--wrap">
-                <h3 class="services__subtitle">Sinta-se bem com
-                    <br>sua saúde bucal
+              </span>
+            </li>
+            <li class="features__list--item">
+              <img
+                src="assets/Img/home/insurance.png"
+                alt="Insurance"
+                class="features__list--img"
+              />
+              <span class="features__list--wrap">
+                <h3 class="features__item-title">Convênios</h3>
+                <p class="features__item-desc">
+                  Trabalhamos com convenios odontológicos <br />como a
+                  OdontoPrime e outros.
+                </p>
+              </span>
+            </li>
+          </ul>
+          <ul class="features__list">
+            <li class="features__list--item">
+              <img
+                src="assets/Img/home/service.png"
+                alt="service"
+                class="features__list--img"
+              />
+              <span class="features__list--wrap">
+                <h3 class="features__item-title">
+                  Serviço odontológico completo
                 </h3>
-                <p class="services__description">Um sorriso saudável é o reflexo do seu bem-estar geral. Cuide da
-                    sua
-                    saúde bucal <br>com atenção e prevenção, garantindo não apenas dentes fortes e brilhantes, 
-                    <br>mas também uma vida cheia de confiança e conforto. 
-                    <br>Invista na sua saúde bucal hoje para colher os benefícios de um sorriso radiante amanhã.
+                <p class="features__item-desc">
+                  Nossa clínica oferece um serviço odontológico completo,
+                  <br />desde exames a implantes, facetas a RX.
                 </p>
+              </span>
+            </li>
+            <li class="features__list--item">
+              <img
+                src="assets/Img/home/judment.png"
+                alt="Safety"
+                class="features__list--img"
+              />
+              <span class="features__list--wrap">
+                <h3 class="features__item-title">Não fazemos julgamento</h3>
+                <p class="features__item-desc">
+                  independente de classe, cor, credo ou opção, <br />toda boca e
+                  bemvinda.
+                </p>
+              </span>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="experts">
+        <div class="experts__container">
+          <h2 class="section__title">EXPERTS EM ODONTOLOGIAL</h2>
+          <h3 class="experts__subtitle">
+            Odontologia de alto nível, com <br />os melhores dentistas da Zona
+            Norte de JF e Região.
+          </h3>
+          <p class="experts__description">
+            Nossos dentistas, verdadeiros mestres do sorriso, estão
+            comprometidos em fornecer cuidados excepcionais que refletem sua
+            vasta experiência e paixão pela odontologia. Com habilidades de
+            última geração e atenção calorosa, nossa equipe garantirá que cada
+            visita resulte em um sorriso deslumbrante, refletindo a excelência
+            de nossos profissionais.
+          </p>
+          <ul class="experts__list">
+            <li class="experts__list--item">
+              <img
+                src="assets/Img/home/nexticon.svg"
+                alt="next icon"
+                class="expert__list--icon"
+              />
+              <p class="experts__list--text">
+                Equipe odontológica de primeira qualidade
+              </p>
+            </li>
+            <li class="experts__list--item">
+              <img
+                src="assets/Img/home/nexticon.svg"
+                alt="next icon"
+                class="expert__list--icon"
+              />
+              <p class="experts__list--text">
+                Serviços odontológicos de última geração
+              </p>
+            </li>
+            <li class="experts__list--item">
+              <img
+                src="assets/Img/home/nexticon.svg"
+                alt="next icon"
+                class="expert__list--icon"
+              />
+              <p class="experts__list--text">
+                Os melhores preços em todos os tratamentos dentários
+              </p>
+            </li>
+          </ul>
+        </div>
+        <div class="experts__img--container">
+          <img
+            src="assets/Img/home/image_casal_03.jpeg"
+            alt="Young asian dentist"
+            class="experts__img"
+          />
+        </div>
+      </section>
+      <section class="testimonial">
+        <div class="testimonial__container">
+          <div class="testimonial__top">
+            <h2 class="section__title testimonial__title">Depoimentos</h2>
+            <div class="testimonial__subtitle--container">
+              <h3 class="testimonial__subtitle">
+                Veja o que os nossos
+                <br />pacientes falam <br />sobre nós
+              </h3>
+              <p class="testimonial__description">
+                Nossas sólidas recomendações de pacientes satisfeitos falam por
+                si. <br />Clientes felizes confiam em nossos cuidados
+                excepcionais <br />e resultados impressionantes. <br />Junte-se
+                a nós para experimentar a qualidade <br />que transforma
+                sorrisos e vidas.
+              </p>
             </div>
-            <ul class="services__list">
-                <li class="services__list--item">
-                    <div class="list__img--container dentures">
-                        <img src="assets/Img/home/dentures.png" alt="Dentures" class="list__img">
-                    </div>
-                    <h3 class="list__item--title">Próteses Dentárias</h3>
-                    <p class="list__item--description">Recupere o seu sorriso radiante e a confiança em si mesmo com as
-                        nossas próteses dentárias de última geração! Feitas sob medida para se adaptarem perfeitamente à
-                        sua boca, as nossas próteses combinam conforto e estética para lhe proporcionar uma aparência
-                        natural e uma mastigação eficaz. Desfrute de refeições deliciosas e interações sociais sem
-                        preocupações. Deixe-nos ajudar você a redescobrir o prazer de sorrir.
-                        <br><b>Agende a sua consulta hoje mesmo e embarque em uma jornada para um sorriso renovado!</b>
-                    </p>
-                </li>
-                <li class="services__list--item">
-                    <div class="list__img--container implants">
-                        <img src="assets/Img/home/implants.png" alt="Implants" class="list__img">
-                    </div>
-                    <h3 class="list__item--title">Implantes</h3>
-                    <p class="list__item--description">Transforme a sua vida com os implantes dentários revolucionários
-                        que oferecemos! Tenha de volta a sua capacidade de mastigar, falar e sorrir com confiança.
-                        Nossos especialistas altamente qualificados garantem um processo seguro e confortável, adaptado
-                        às suas necessidades individuais. Com tecnologia de ponta e materiais duradouros, os nossos
-                        implantes proporcionam resultados excepcionais. Não espere mais para recuperar a sua qualidade
-                        de vida. <br><b>Agende a sua consulta e dê o primeiro passo em direção a um sorriso radiante e
-                            funcional!</b>
-                    </p>
-                </li>
-                <li class="services__list--item">
-                    <div class="list__img--container whitening">
-                        <img src="assets/Img/home/whitening.png" alt="Whitening" class="list__img">
-                    </div>
-                    <h3 class="list__item--title">Clareamento</h3>
-                    <p class="list__item--description">Descubra um sorriso mais brilhante e confiante com o nosso
-                        tratamento de clareamento dentário de excelência! Deixe para trás manchas e descolorações, e
-                        seja cativante em cada sorriso. Nossa abordagem segura e eficaz oferece resultados visíveis em
-                        pouco tempo, sob a supervisão de profissionais experientes. Realce a sua beleza natural e
-                        ilumine o seu rosto com dentes radiantes. Não adie mais a oportunidade de ter um sorriso
-                        deslumbrante. <br><b>Entre em contato conosco hoje mesmo e comece a jornada para um sorriso mais
-                            branco
-                            e luminoso!</b>
-                    </p>
-                </li>
-                <li class="services__list--item">
-                    <div class="list__img--container rootcanal">
-                        <img src="assets/Img/home/rootcanal.png" alt="Root Canal" class="list__img">
-                    </div>
-                    <h3 class="list__item--title">Tratamento de Canal</h3>
-                    <p class="list__item--description">Recupere o conforto e a saúde dos seus dentes com o nosso
-                        tratamento de canal de excelência. Nossa equipe altamente qualificada e equipamentos de última
-                        geração garantem uma experiência livre de desconforto. Resolvemos eficazmente problemas como dor
-                        intensa, inchaço e sensibilidade, restaurando a vitalidade do seu sorriso. Não deixe que
-                        problemas dentários prejudiquem sua qualidade de vida. <br><b>Agende agora mesmo a sua consulta
-                            e
-                            confie em nós para devolver o seu sorriso ao seu melhor estado.</b>
-                    </p>
-                </li>
+          </div>
+          <div class="testimonial__bottom">
+            <ul class="testimonial__list">
+              <li class="testimonial__item">
+                <img
+                  src="assets/Img/home/Mask Group.png"
+                  alt="Profile 1"
+                  class="testimonial__perfil"
+                />
+                <div class="testimonial__card">
+                  <h3 class="testimonial__card--title">Fernando Lima</h3>
+                  <p class="testimonial__text">
+                    Já tratei toda a família com o
+                    <br />Dr. Victor e a Dra. Sonile. <br />O atendimento como
+                    sempre super profissional <br />e o resultado foi ótimo.
+                    <br />Recomendo o serviço desses profissionais.
+                  </p>
+                  <img
+                    src="assets/Img/home/stars.svg"
+                    alt=""
+                    class="testimonial__stars"
+                  />
+                </div>
+              </li>
+              <li class="testimonial__item">
+                <img
+                  src="assets/Img/home/Mask Group1.png"
+                  alt="Profile 1"
+                  class="testimonial__perfil"
+                />
+                <div class="testimonial__card">
+                  <h3 class="testimonial__card--title">Eduardo Campos</h3>
+                  <p class="testimonial__text">
+                    Pessoal família e muito educado.
+                    <br />Trabalho de qualidade e garantido. <br />Não tenho
+                    dúvidas os melhores com quem já tratei.
+                  </p>
+                  <img
+                    src="assets/Img/home/stars.svg"
+                    alt=""
+                    class="testimonial__stars"
+                  />
+                </div>
+              </li>
+              <li class="testimonial__item">
+                <img
+                  src="assets/Img/home/Mask Group2.png"
+                  alt="Profile 1"
+                  class="testimonial__perfil"
+                />
+                <div class="testimonial__card">
+                  <h3 class="testimonial__card--title">Daniela Oliveira</h3>
+                  <p class="testimonial__text">
+                    O Dr. Victor e a Dra. Sonile
+                    <br />são os melhores profissionais que existem.
+                    <br />Atenciosos, cuidadosos, super dedicados <br />e
+                    preocupados com nosso bem estar. <br />Sou muito satisfeita
+                    com o trabalho...
+                  </p>
+                  <img
+                    src="assets/Img/home/stars.svg"
+                    alt=""
+                    class="testimonial__stars"
+                  />
+                </div>
+              </li>
             </ul>
-            <a href="/assets/pages/services.html" class="services__button">Veja toda a lista de serviços<img
-                    src="/assets/Img/home/nexticon.svg" alt=""></a>
-        </section>
-        <section class="dental24h">
-            <div class="dental24__img--container">
-                <img src="assets/Img/home/Image_sonile_03.jpeg" alt="Patient" class="dental24__img">
+          </div>
+        </div>
+      </section>
+      <section class="blog">
+        <div class="blog__title--container">
+          <h2 class="section__title">Blog</h2>
+          <h3 class="blog__subtitle">
+            Amplie seus conhecimentos, lendo nossos artigos
+          </h3>
+        </div>
+        <div class="blog__news--container">
+          <ul class="blog__list">
+            <li class="blog__list--item">
+              <div class="blog__news--wrap news1">
+                <article class="blog__news--date">
+                  <p class="blog__news--date-day">23</p>
+                  <p class="blog__news--date--month">Jan</p>
+                </article>
+              </div>
+              <h2 class="blog__news--title section__title">TECNOLOGIA</h2>
+              <h3 class="blog__news--subtitle">
+                Nova tecnologia reduz tempo de implantes nos consultórios
+              </h3>
+              <p class="blog__news--description">
+                Óla! É muito importante ter você aqui no site da Guedes da Matta
+                Odontología, em preve teremos um blog exclusivo com muitas
+                informações sobre cuidados com seus sorriso. Aguarde!
+              </p>
+            </li>
+            <li class="blog__list--item">
+              <div class="blog__news--wrap news2">
+                <article class="blog__news--date">
+                  <p class="blog__news--date-day">23</p>
+                  <p class="blog__news--date--month">Jan</p>
+                </article>
+              </div>
+              <h2 class="blog__news--title section__title">CUIDADO DENTAL</h2>
+              <h3 class="blog__news--subtitle">
+                Cuidados dentários regulares fazem o seu sorriso brilhar
+              </h3>
+              <p class="blog__news--description">
+                Óla! É muito importante ter você aqui no site da Guedes da Matta
+                Odontología, em preve teremos um blog exclusivo com muitas
+                informações sobre cuidados com seus sorriso. Aguarde!
+              </p>
+            </li>
+            <li class="blog__list--item">
+              <div class="blog__news--wrap news3">
+                <article class="blog__news--date">
+                  <p class="blog__news--date-day">23</p>
+                  <p class="blog__news--date--month">Jan</p>
+                </article>
+              </div>
+              <h2 class="blog__news--title section__title">HIGIENE</h2>
+              <h3 class="blog__news--subtitle">
+                Higiene dental para todas as idades sorrirem
+              </h3>
+              <p class="blog__news--description">
+                Óla! É muito importante ter você aqui no site da Guedes da Matta
+                Odontología, em preve teremos um blog exclusivo com muitas
+                informações sobre cuidados com seus sorriso. Aguarde!
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="appointment">
+        <div class="appointment__address">
+          <address class="appointment__address--box">
+            <a href="https://goo.gl/maps/xNXDHHSCAeyab8zr7" target="_blank">
+              <img
+                src="assets/Img/home/home-icon.png"
+                alt="Icone do endereço"
+                class="apointment__adress--home"
+              />
+            </a>
+            <p class="appointment__adress--text">
+              Rua Marilia, 510 SL 302 Shopping Benfica <br />Juiz de Fora/MG
+            </p>
+          </address>
+        </div>
+        <div id="appointment" class="appointment__container">
+          <div class="appointment__container--title">
+            <h2 class="section__title appointment__title">TIRE SUAS DÚVIDAS</h2>
+            <h3 class="appointment__subtitle">
+              Cuidar do seu sorriso é um prazer!
+            </h3>
+            <p class="appointment__description">
+              Suas dúvidas importam! Deixe-nos responder a todas as suas
+              perguntas
+              <br />sobre tratamento odontológico. Preencha nosso formulário e
+              embarque no <br />caminho para um sorriso mais esclarecido e
+              saudável.
+            </p>
+          </div>
+          <form action="" class="appointment__container__form">
+            <div class="appointment__container--line1">
+              <div class="appointment__container--wrap">
+                <label for="name" class="appointment__form--label">Nome</label
+                ><br />
+                <input
+                  type="text"
+                  name="name"
+                  id="name"
+                  placeholder="Digite seu nome..."
+                  class="input appointment__form--input input__name"
+                />
+              </div>
+              <div class="appointment__container--wrap">
+                <label for="email" class="appointment__form--label"
+                  >E-mail</label
+                ><br />
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="Seu melhor e-mail..."
+                  class="input appointment__form--input input__email"
+                />
+              </div>
             </div>
-            <div class="dental24__container">
-                <h2 class="section__title">Atendimento de Emergência 24H</h2>
-                <h3 class="dental24h__subtitle">Tratamento gentil e amigável
-                    <br>a todos os nossos pacientes.
-                </h3>
-                <p class="dental24h__description">Descubra um tratamento odontológico que combina expertise
-                    profissional com cuidado gentil e amigável. Nossa equipe está empenhada em tornar cada visita uma
-                    experiência confortável, atendendo às suas necessidades com delicadeza. <br>Dê um passo em direção a
-                    um
-                    sorriso saudável e positivo, onde o seu conforto é a nossa prioridade.
-                </p>
-                <a href="#appointment" class="dental24h__button">Tire suas Dúvidas</a>
+            <div class="appointment__container--line2">
+              <div class="appointment__container--wrap">
+                <label for="services" class="appointment__form--label"
+                  >Serviços</label
+                ><br />
+                <select
+                  id="services"
+                  name="services"
+                  class="appointment__form--input input__services"
+                >
+                  <option value="whitening" class="options">Clareamento</option>
+                  <option value="implants" class="options">Implantes</option>
+                  <option value="root canal" class="options">
+                    Tratamento de Canal
+                  </option>
+                  <option value="dentures" class="options">
+                    Próteses Dentárias
+                  </option>
+                </select>
+              </div>
+              <div class="appointment__container--wrap">
+                <label for="department" class="appointment__form--label"
+                  >Área</label
+                ><br />
+                <select
+                  id="department"
+                  name="department"
+                  placeholder="Selecione uma área"
+                  class="appointment__form--input input__department"
+                >
+                  <option value="Dentist" class="options">Dentista</option>
+                  <option value="Surgery" class="options">Cirurgia</option>
+                  <option value="Prosthesis" class="options">Protese</option>
+                </select>
+              </div>
             </div>
-        </section>
-        <section class="features">
-            <div class="features__container">
-                <div class="features__container--title">
-                    <h2 class="section__title">ESPECIALISTAS</h2>
-                    <h3 class="features__subtitle">Atendimento especializado e experiente</h3>
-                    <p class="features__description">Experimente a excelência do tratamento odontológico especializado
-                        e altamente experiente que oferecemos. <br>Nossa equipe dedicada de profissionais qualificados
-                        está
-                        comprometida em fornecer soluções precisas <br>e personalizadas para todas as suas necessidades
-                        dentárias. <br>Confie em nós para transformar o seu sorriso com conhecimento e cuidado
-                        especializado.
-                    </p>
-                </div>
-                <ul class="features__list">
-                    <li class="features__list--item">
-                        <img src="assets/Img/home/safety.png" alt="Safety" class="features__list--img">
-                        <span class="features__list--wrap">
-                            <h3 class="features__item-title">Segurança Total</h3>
-                            <p class="features__item-desc">Priorizamos sua segurança com nosso controles de qualidade
-                                <br>de alto padrão
-                            </p>
-                        </span>
-                    </li>
-                    <li class="features__list--item">
-                        <img src="assets/Img/home/insurance.png" alt="Insurance" class="features__list--img">
-                        <span class="features__list--wrap">
-                            <h3 class="features__item-title">Convênios</h3>
-                            <p class="features__item-desc">Trabalhamos com convenios odontológicos
-                                <br>como a OdontoPrime e outros.
-                            </p>
-                        </span>
-                    </li>
-                </ul>
-                <ul class="features__list">
-                    <li class="features__list--item">
-                        <img src="assets/Img/home/service.png" alt="service" class="features__list--img">
-                        <span class="features__list--wrap">
-                            <h3 class="features__item-title">Serviço odontológico completo</h3>
-                            <p class="features__item-desc">Nossa clínica oferece um serviço odontológico completo,
-                                <br>desde exames a implantes, facetas a RX.
-                            </p>
-                        </span>
-                    </li>
-                    <li class="features__list--item">
-                        <img src="assets/Img/home/judment.png" alt="Safety" class="features__list--img">
-                        <span class="features__list--wrap">
-                            <h3 class="features__item-title">Não fazemos julgamento</h3>
-                            <p class="features__item-desc">independente de classe, cor, credo ou opção,
-                                <br>toda boca e bemvinda.
-                            </p>
-                        </span>
-                    </li>
-                </ul>
+            <div
+              class="appointment__container--wrap appointment__container--text"
+            >
+              <label for="messages">Menssagens</label>
+              <textarea
+                name="messages"
+                id="messages"
+                cols="30"
+                rows="11"
+                placeholder="Digite sua mensagem..."
+                class="input__messages appointment__form--label"
+              ></textarea>
             </div>
-        </section>
-        <section class="experts">
-            <div class="experts__container">
-                <h2 class="section__title">EXPERTS EM ODONTOLOGIAL</h2>
-                <h3 class="experts__subtitle">Odontologia de alto nível, com
-                    <br>os melhores dentistas da Zona Norte de JF e Região.
-                </h3>
-                <p class="experts__description">Nossos dentistas, verdadeiros mestres do sorriso, estão comprometidos
-                    em fornecer cuidados excepcionais que refletem sua vasta experiência e paixão pela odontologia. Com
-                    habilidades de última geração e atenção calorosa, nossa equipe garantirá que cada visita resulte em
-                    um sorriso deslumbrante, refletindo a excelência de nossos profissionais.
-                </p>
-                <ul class="experts__list">
-                    <li class="experts__list--item">
-                        <img src="assets/Img/home/nexticon.svg" alt="next icon" class="expert__list--icon">
-                        <p class="experts__list--text">Equipe odontológica de primeira qualidade</p>
-                    </li>
-                    <li class="experts__list--item">
-                        <img src="assets/Img/home/nexticon.svg" alt="next icon" class="expert__list--icon">
-                        <p class="experts__list--text">Serviços odontológicos de última geração</p>
-                    </li>
-                    <li class="experts__list--item">
-                        <img src="assets/Img/home/nexticon.svg" alt="next icon" class="expert__list--icon">
-                        <p class="experts__list--text">Os melhores preços em todos os tratamentos dentários</p>
-                    </li>
-                </ul>
+          </form>
+          <div class="appointment__container--contact">
+            <div class="contact">
+              <a href="#" id="btnLigar2">
+                <img
+                  src="assets/Img/home/phone-icon.png"
+                  alt="telefone"
+                  class="appointment__contact-img"
+                />
+              </a>
+              <div class="appointment__contact-wrap">
+                <p class="appointment__contact--title">Entre em contato</p>
+                <p class="appointment__contact">32 3061 2136</p>
+              </div>
             </div>
-            <div class="experts__img--container">
-                <img src="assets/Img/home/image_casal_03.jpeg" alt="Young asian dentist" class="experts__img">
-            </div>
-        </section>
-        <section class="testimonial">
-            <div class="testimonial__container">
-                <div class="testimonial__top">
-                    <h2 class="section__title testimonial__title">Depoimentos</h2>
-                    <div class="testimonial__subtitle--container">
-                        <h3 class="testimonial__subtitle">
-                            Veja o que os nossos 
-                            <br>pacientes falam
-                            <br>sobre nós
-                        </h3>
-                        <p class="testimonial__description">Nossas sólidas recomendações de pacientes satisfeitos falam
-                            por si. <br>Clientes felizes confiam em nossos cuidados excepcionais <br>e resultados
-                            impressionantes. <br>Junte-se a nós para experimentar a qualidade <br>que transforma
-                            sorrisos e
-                            vidas.
-                        </p>
-                    </div>
-                </div>
-                <div class="testimonial__bottom">
-                    <ul class="testimonial__list">
-                        <li class="testimonial__item">
-                            <img src="assets/Img/home/Mask Group.png" alt="Profile 1" class="testimonial__perfil">
-                            <div class="testimonial__card">
-                                <h3 class="testimonial__card--title">Fernando Lima</h3>
-                                <p class="testimonial__text">
-                                    Já tratei toda a família com o
-                                    <br>Dr. Victor e a Dra. Sonile.
-                                    <br>O atendimento como sempre super profissional
-                                    <br>e o resultado foi ótimo.
-                                    <br>Recomendo o serviço desses profissionais.
-                                </p>
-                                <img src="assets/Img/home/stars.svg" alt="" class="testimonial__stars">
-                            </div>
-                        </li>
-                        <li class="testimonial__item">
-                            <img src="assets/Img/home/Mask Group1.png" alt="Profile 1" class="testimonial__perfil">
-                            <div class="testimonial__card">
-                                <h3 class="testimonial__card--title">Eduardo Campos</h3>
-                                <p class="testimonial__text">
-                                    Pessoal família e muito educado.
-                                    <br>Trabalho de qualidade e garantido.
-                                    <br>Não tenho dúvidas os melhores com quem já tratei.
-                                </p>
-                                <img src="assets/Img/home/stars.svg" alt="" class="testimonial__stars">
-                            </div>
-                        </li>
-                        <li class="testimonial__item">
-                            <img src="assets/Img/home/Mask Group2.png" alt="Profile 1" class="testimonial__perfil">
-                            <div class="testimonial__card">
-                                <h3 class="testimonial__card--title">Daniela Oliveira</h3>
-                                <p class="testimonial__text">
-                                    O Dr. Victor e a Dra. Sonile
-                                    <br>são os melhores profissionais que existem.
-                                    <br>Atenciosos, cuidadosos, super dedicados
-                                    <br>e preocupados com nosso bem estar.
-                                    <br>Sou muito satisfeita com o trabalho...
-                                </p>
-                                <img src="assets/Img/home/stars.svg" alt="" class="testimonial__stars">
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-        <section class="blog">
-            <div class="blog__title--container">
-                <h2 class="section__title">Blog</h2>
-                <h3 class="blog__subtitle">Amplie seus conhecimentos, lendo nossos artigos</h3>
-            </div>
-            <div class="blog__news--container">
-                <ul class="blog__list">
-                    <li class="blog__list--item">
-                        <div class="blog__news--wrap news1">
-                            <article class="blog__news--date">
-                                <p class="blog__news--date-day">23</p>
-                                <p class="blog__news--date--month">Jan</p>
-                            </article>
-                        </div>
-                        <h2 class="blog__news--title section__title">TECNOLOGIA</h2>
-                        <h3 class="blog__news--subtitle">Nova tecnologia reduz tempo de implantes nos consultórios</h3>
-                        <p class="blog__news--description">Óla! É muito importante ter você aqui no site da
-                            Guedes da Matta Odontología, em preve teremos um blog exclusivo com muitas
-                            informações sobre cuidados com seus sorriso. Aguarde!
-                        </p>
-                    </li>
-                    <li class="blog__list--item">
-                        <div class="blog__news--wrap news2">
-                            <article class="blog__news--date">
-                                <p class="blog__news--date-day">23</p>
-                                <p class="blog__news--date--month">Jan</p>
-                            </article>
-                        </div>
-                        <h2 class="blog__news--title section__title">CUIDADO DENTAL</h2>
-                        <h3 class="blog__news--subtitle">Cuidados dentários regulares fazem o seu sorriso brilhar</h3>
-                        <p class="blog__news--description">Óla! É muito importante ter você aqui no site da
-                            Guedes da Matta Odontología, em preve teremos um blog exclusivo com muitas
-                            informações sobre cuidados com seus sorriso. Aguarde!
-                        </p>
-                    </li>
-                    <li class="blog__list--item">
-                        <div class="blog__news--wrap news3">
-                            <article class="blog__news--date">
-                                <p class="blog__news--date-day">23</p>
-                                <p class="blog__news--date--month">Jan</p>
-                            </article>
-                        </div>
-                        <h2 class="blog__news--title section__title">HIGIENE</h2>
-                        <h3 class="blog__news--subtitle">Higiene dental para todas as idades sorrirem</h3>
-                        <p class="blog__news--description">Óla! É muito importante ter você aqui no site da
-                            Guedes da Matta Odontología, em preve teremos um blog exclusivo com muitas
-                            informações sobre cuidados com seus sorriso. Aguarde!
-                        </p>
-                    </li>
-                </ul>
-            </div>
-        </section>
-        <section class="appointment">
-            <div class="appointment__address">
-                <address class="appointment__address--box">
-                    <a href="https://goo.gl/maps/xNXDHHSCAeyab8zr7" target="_blank">
-                        <img src="assets/Img/home/home-icon.png" alt="Icone do endereço"
-                            class="apointment__adress--home">
-                    </a>
-                    <p class="appointment__adress--text">Rua Marilia, 510 SL 302 Shopping Benfica
-                        <br>Juiz de Fora/MG
-                    </p>
-                </address>
-            </div>
-            <div id="appointment" class="appointment__container">
-                <div class="appointment__container--title">
-                    <h2 class="section__title appointment__title">TIRE SUAS DÚVIDAS</h2>
-                    <h3 class="appointment__subtitle">Cuidar do seu sorriso é um prazer!</h3>
-                    <p class="appointment__description">
-                        Suas dúvidas importam! Deixe-nos responder a todas as suas perguntas 
-                        <br>sobre tratamento odontológico. Preencha nosso formulário e embarque no 
-                        <br>caminho para um sorriso mais esclarecido e saudável.
-                    </p>
-                </div>
-                <form action="" class="appointment__container__form">
-                    <div class="appointment__container--line1">
-                        <div class="appointment__container--wrap">
-                            <label for="name" class="appointment__form--label">Nome</label><br>
-                            <input type="text" name="name" id="name" placeholder="Digite seu nome..."
-                                class="input appointment__form--input input__name">
-                        </div>
-                        <div class="appointment__container--wrap">
-                            <label for="email" class="appointment__form--label">E-mail</label><br>
-                            <input type="email" name="email" id="email" placeholder="Seu melhor e-mail..."
-                                class="input appointment__form--input input__email">
-                        </div>
-                    </div>
-                    <div class="appointment__container--line2">
-                        <div class="appointment__container--wrap">
-                            <label for="services" class="appointment__form--label">Serviços</label><br>
-                            <select id="services" name="services" class="appointment__form--input input__services">
-                                <option value="whitening" class="options">Clareamento</option>
-                                <option value="implants" class="options">Implantes</option>
-                                <option value="root canal" class="options">Tratamento de Canal</option>
-                                <option value="dentures" class="options">Próteses Dentárias</option>
-                            </select>
-                        </div>
-                        <div class="appointment__container--wrap">
-                            <label for="department" class="appointment__form--label">Área</label><br>
-                            <select id="department" name="department" placeholder="Selecione uma área"
-                                class="appointment__form--input input__department">
-                                <option value="Dentist" class="options">Dentista</option>
-                                <option value="Surgery" class="options">Cirurgia</option>
-                                <option value="Prosthesis" class="options">Protese</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="appointment__container--wrap appointment__container--text">
-                        <label for="messages">Menssagens</label>
-                        <textarea name="messages" id="messages" cols="30" rows="11" placeholder="Digite sua mensagem..."
-                            class="input__messages appointment__form--label"></textarea>
-                    </div>
-                </form>
-                <div class="appointment__container--contact">
-                    <div class="contact">
-                        <a href="#" id="btnLigar2">
-                            <img src="assets/Img/home/phone-icon.png" alt="telefone" class="appointment__contact-img">
-                        </a>
-                        <div class="appointment__contact-wrap">
-                            <p class="appointment__contact--title">Entre em contato</p>
-                            <p class="appointment__contact">32 3061 2136</p>
-                        </div>
-                    </div>
-                    <input type="submit" value="Enviar" class="appointment__button">
-                </div>
-            </div>
-        </section>
+            <input type="submit" value="Enviar" class="appointment__button" />
+          </div>
+        </div>
+      </section>
     </main>
     <footer class="footer">
-        <div class="footer__container">
-            <div class="footer__colum1">
-                <a href="#"><img src="assets/Img/logo-footer.png" alt="Logo Dentalist" class="footer__logo"></a>
-                <p class="footer__description">
-                    Guesdes da Matta Odontologia é uma clínica de alto nível para
-                    <br>tratamentos dentários, preventivos, e corretivos
-                    <br>em Juiz de Fora/MG
+      <div class="footer__container">
+        <div class="footer__colum1">
+          <a href="#"
+            ><img
+              src="assets/Img/logo-footer.png"
+              alt="Logo Dentalist"
+              class="footer__logo"
+          /></a>
+          <p class="footer__description">
+            Guesdes da Matta Odontologia é uma clínica de alto nível para
+            <br />tratamentos dentários, preventivos, e corretivos <br />em Juiz
+            de Fora/MG
+          </p>
+
+          <p class="footer__follow">SIGA-NOS NAS REDES SOCIAIS</p>
+          <article class="footer__social-medias">
+            <a
+              href="https://www.facebook.com/cuidarodontologiabenfica/"
+              target="_blank"
+            >
+              <img
+                src="assets/Img/facebook-footer.png"
+                alt="Facebook"
+                class="footer___medias--icon"
+              />
+            </a>
+
+            <a href="#" id="btnWhatsapp2" target="_blank">
+              <img
+                src="assets/Img/whatsapp_logo_footer.png"
+                alt="WhatsApp"
+                class="footer___medias--icon"
+              />
+            </a>
+
+            <a
+              href="https://www.instagram.com/guedesdamattaodontologia/"
+              target="_blank"
+            >
+              <img
+                src="assets/Img/instagram-footer.png"
+                alt="Instagram"
+                class="footer___medias--icon"
+              />
+            </a>
+          </article>
+        </div>
+        <div class="footer__colum2">
+          <ul class="footer__links--list">
+            <li class="footer__list-title">LINKS</li>
+            <li class="footer__links--list-item">
+              <a href="/assets/pages/about.html" class="footer__list--link"
+                >Sobre Nós</a
+              >
+            </li>
+            <li class="footer__links--list-item">
+              <a href="/assets/pages/services.html" class="footer__list--link"
+                >Serviços Odontológicos</a
+              >
+            </li>
+            <li class="footer__links--list-item">
+              <a href="/assets/pages/services.html" class="footer__list--link"
+                >Especialidades</a
+              >
+            </li>
+            <li class="footer__links--list-item">
+              <a href="/assets/pages/patient.html" class="footer__list--link"
+                >Blog</a
+              >
+            </li>
+            <li class="footer__links--list-item">
+              <a href="#" class="footer__list--link">FAQs</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__colum3">
+          <ul class="footer__contact--list">
+            <li class="footer__list-title">CONTATO & INFORMAÇÕES</li>
+            <li class="footer__contact--item">
+              <a href="#" id="btnLigar3">
+                <img
+                  src="assets/Img/phone--footer.png"
+                  alt="telefone"
+                  class="footer__contact--img"
+                />
+              </a>
+              <article class="footer__contact--wrap">
+                <h3 class="footer__contact--subtitle">TELEFONE</h3>
+                <p class="footer__contact--text">32 3061 2136</p>
+              </article>
+            </li>
+            <li class="footer__contact--item">
+              <img
+                src="assets/Img/clock--footer.png"
+                alt=""
+                class="footer__contact--img"
+              />
+              <article class="footer__contact--wrap">
+                <h3 class="footer__contact--subtitle">FUNCIONAMENTO</h3>
+                <p class="footer__contact--text">
+                  segunda-feira, 12:30 às 18:30
+                  <br />terça-feira, 08:30 às 17:30 <br />quarta-feira, 12:30 às
+                  18:30 <br />quinta-feira, 08:30 às 18:30 <br />sexta-feira,
+                  12:30 às 17:30
                 </p>
-
-                <p class="footer__follow">SIGA-NOS NAS REDES SOCIAIS</p>
-                <article class="footer__social-medias">
-                    <a href="https://www.facebook.com/cuidarodontologiabenfica/" target="_blank">
-                        <img src="assets/Img/facebook-footer.png" alt="Facebook" class="footer___medias--icon">
-                    </a>
-
-                    <a href="#" id="btnWhatsapp2" target="_blank">
-                        <img src="assets/Img/whatsapp_logo_footer.png" alt="WhatsApp" class="footer___medias--icon">
-                    </a>
-
-                    <a href="https://www.instagram.com/guedesdamattaodontologia/" target="_blank">
-                        <img src="assets/Img/instagram-footer.png" alt="Instagram" class="footer___medias--icon">
-                    </a>
-                </article>
-            </div>
-            <div class="footer__colum2">
-                <ul class="footer__links--list">
-                    <li class="footer__list-title">LINKS</li>
-                    <li class="footer__links--list-item">
-                        <a href="/assets/pages/about.html" class="footer__list--link">Sobre Nós</a>
-                    </li>
-                    <li class="footer__links--list-item">
-                        <a href="/assets/pages/services.html" class="footer__list--link">Serviços Odontológicos</a>
-                    </li>
-                    <li class="footer__links--list-item">
-                        <a href="/assets/pages/services.html" class="footer__list--link">Especialidades</a>
-                    </li>
-                    <li class="footer__links--list-item">
-                        <a href="/assets/pages/patient.html" class="footer__list--link">Blog</a>
-                    </li>
-                    <li class="footer__links--list-item">
-                        <a href="#" class="footer__list--link">FAQs</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="footer__colum3">
-                <ul class="footer__contact--list">
-                    <li class="footer__list-title">CONTATO & INFORMAÇÕES</li>
-                    <li class="footer__contact--item">
-                        <a href="#" id="btnLigar3">
-                            <img src="assets/Img/phone--footer.png" alt="telefone" class="footer__contact--img">
-                        </a>
-                        <article class="footer__contact--wrap">
-                            <h3 class="footer__contact--subtitle">TELEFONE</h3>
-                            <p class="footer__contact--text">32 3061 2136</p>
-                        </article>
-                    </li>
-                    <li class="footer__contact--item">
-                        <img src="assets/Img/clock--footer.png" alt="" class="footer__contact--img">
-                        <article class="footer__contact--wrap">
-                            <h3 class="footer__contact--subtitle">FUNCIONAMENTO</h3>
-                            <p class="footer__contact--text">
-                                segunda-feira, 12:30 às 18:30
-                                <br>terça-feira, 08:30 às 17:30
-                                <br>quarta-feira, 12:30 às 18:30
-                                <br>quinta-feira, 08:30 às 18:30
-                                <br>sexta-feira, 12:30 às 17:30
-                            </p>
-                        </article>
-                    </li>
-                    <li class="footer__contact--item">
-                        <a href="https://goo.gl/maps/xNXDHHSCAeyab8zr7" target="_blank">
-                            <img src="assets/Img/loc--footer.png" alt="" class="footer__contact--img">
-                        </a>
-                        <article class="footer__contact--wrap">
-                            <h3 class="footer__contact--subtitle">ENDEREÇO</h3>
-                            <p class="footer__contact--text">Rua Marilia, 510 - SL 302 - Shopping Benfica
-                                <br>Juiz de Fora/MG
-                            </p>
-                        </article>
-                    </li>
-                </ul>
-            </div>
+              </article>
+            </li>
+            <li class="footer__contact--item">
+              <a href="https://goo.gl/maps/xNXDHHSCAeyab8zr7" target="_blank">
+                <img
+                  src="assets/Img/loc--footer.png"
+                  alt=""
+                  class="footer__contact--img"
+                />
+              </a>
+              <article class="footer__contact--wrap">
+                <h3 class="footer__contact--subtitle">ENDEREÇO</h3>
+                <p class="footer__contact--text">
+                  Rua Marilia, 510 - SL 302 - Shopping Benfica <br />Juiz de
+                  Fora/MG
+                </p>
+              </article>
+            </li>
+          </ul>
         </div>
-        <div class="footer__container2">
-            <p class="footer__page-rigths">©Guedes da Matta Odontologia. Todos os direitos Reservados</p>
-            <div class="footer__container2--wrap">
-                <a href="#" class="footer__link">Termos de uso</a>
-                <a href="#" class="footer__link">Politica de privacidades</a>
-            </div>
+      </div>
+      <div class="footer__container2">
+        <p class="footer__page-rigths">
+          ©Guedes da Matta Odontologia. Todos os direitos Reservados
+        </p>
+        <div class="footer__container2--wrap">
+          <a href="#" class="footer__link">Termos de uso</a>
+          <a href="#" class="footer__link">Politica de privacidades</a>
         </div>
+      </div>
     </footer>
 
-    <script type="text/javascript" src="/assets/JS/jquery-1.12.4.min.js"></script>
-    <script type="text/javascript" src="/assets/JS/modernizr-3.5.0.min.js"></script>
+    <script
+      type="text/javascript"
+      src="/assets/JS/jquery-1.12.4.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="/assets/JS/modernizr-3.5.0.min.js"
+    ></script>
     <script type="text/javascript" src="/assets/JS/popper.min.js"></script>
     <script type="text/javascript" src="/assets/JS/app.js"></script>
     <script type="text/javascript" src="/assets/JS/main.js"></script>
-
-</body>
-
+  </body>
 </html>

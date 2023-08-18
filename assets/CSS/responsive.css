@@ -1,96 +1,205 @@
-@media(max-width: 768px) {
-    .header {
-        padding: 1em 2em;
-    }
+@media (max-width: 768px) {
+  html {
+    font-size: 87.5%;
+  }
 
+  body {
+    overflow-x: hidden;
+  }
 
-    header nav {
-        opacity: 0;
-        visibility: hidden;
-    }
+  body.showMobile {
+    overflow: hidden;
+  }
 
-    .banner {
-        display: flex;
-        flex-direction: column;
-    }
+  .header .navbar {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    gap: 0;
+  }
 
-    .banner__img-wrap {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 2rem;
-        justify-content: center;
-    }
+  .button-open-menu {
+    opacity: 1;
+    visibility: visible;
+    right: 1.5rem;
+    background-color: transparent;
+    border: none;
+    font-size: 2rem;
+    color: gray;
+    cursor: pointer;
+  }
 
-    .banner__contact {
-        flex-direction: column;
-    }
+  body.showMobile .button-open-menu {
+    opacity: 0;
+  }
 
-    .banner__contact .tel {
-        display: flex;
-        align-items: center;
-        margin-top: 1rem;
-    }
+  body.showMobile .close-menu-mobile {
+    opacity: 1;
+    visibility: visible;
+    right: 2.5rem;
+    background-color: transparent;
+    border: none;
+    font-size: 2rem;
+    color: #fff;
+    cursor: pointer;
+  }
 
-    .banner__contact-img {
-        margin-left: 0;
-        background-color: var(--roxo);
-    }
+  body.showMobile .header .navbar {
+    opacity: 1;
+    visibility: visible;
+    top: 0;
+    left: 0;
+    background-color: #181945;
+    width: 100vw;
+    height: 100vh;
+    transform: translateX(0);
+  }
 
-    .services__list,
-    .services__subtitle--wrap,
-    .experts,
-    .features__list,
-    .testimonial__subtitle--container,
-    .testimonial__list,
-    .blog__list,
-    .appointment,
-    .footer__container {
-        flex-direction: column;
-    }
+  body.showMobile .header .navbar {
+    flex-direction: column;
+    justify-content: center;
+    gap: 4rem;
+  }
 
-    .services__subtitle--wrap {
-        gap: 1.5rem;
-    }
+  body.showMobile .header .navbar .navbar__list {
+    flex-direction: column;
+    align-items: center;
+  }
 
-    .dental24h {
-        flex-direction: column;
-        padding: 0;
-    }
+  body.showMobile .header .navbar .navbar__list a {
+    color: #fff;
+    font-size: 1.5rem;
+  }
 
-    .experts__img {
-        width: 20rem;
-        border-radius: 20px;
-    }
+  .banner {
+    display: flex;
+    flex-direction: column;
+  }
 
-    .dental24__img {
-        border-radius: 20px;
-    }
+  .banner__img-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    justify-content: center;
+  }
 
-    .testimonial__description {
-        margin-top: calc(16px - 12rem);
-    }
+  .banner__title {
+    padding: 0;
+    margin-top: 6rem;
+  }
 
-    .blog__list--item {
-        width: 100%;
-    }
+  .banner__description {
+    padding: 0;
+    margin: 1.5rem auto;
+  }
 
-    .news1, .news2, .news3 {
-        width: 100%;
-    }
+  .banner__contact {
+    padding: 0;
+    width: 100%;
+    gap: 1.5rem;
+  }
 
-    .appointment__container--line1, 
-    .appointment__container--line2 {
-        flex-direction: column;
-        gap: 1.5rem;
-    }
+  .banner__contact .banner__contact--wrap p {
+    font-size: 0.75rem;
+  }
 
-    .appointment__container--wrap {
-        width: 100%;
-    }
+  .banner__contact .tel {
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+  }
 
-    .appointment__container--wrap input {
-        width: 100%;
-    }
+  .banner__contact-img {
+    margin-left: 0;
+    background-color: var(--roxo);
+  }
 
+  .banner__subtitle {
+    padding: 0;
+    line-height: 150%;
+  }
+
+  .services {
+    padding: 0 1.5rem;
+  }
+
+  .dental24__img--container {
+    padding: 0 1.5rem;
+  }
+
+  .dental24__img--container img {
+    width: 100%;
+  }
+
+  .dental24__container {
+    padding: 0 1.5rem;
+  }
+
+  .experts {
+    padding: 0 1.5rem;
+  }
+
+  .services__list,
+  .services__subtitle--wrap,
+  .experts,
+  .features__list,
+  .testimonial__subtitle--container,
+  .testimonial__list,
+  .blog__list,
+  .appointment,
+  .footer__container {
+    flex-direction: column;
+  }
+
+  .services__subtitle--wrap {
+    gap: 1.5rem;
+  }
+
+  .dental24h {
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .experts__img {
+    width: 20rem;
+    border-radius: 20px;
+  }
+
+  .dental24__img {
+    border-radius: 20px;
+  }
+
+  .testimonial__description {
+    margin-top: calc(16px - 12rem);
+  }
+
+  .blog__list--item {
+    width: 100%;
+    padding: 0;
+  }
+
+  .news1,
+  .news2,
+  .news3 {
+    width: 100%;
+  }
+
+  .appointment__container--line1,
+  .appointment__container--line2 {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .appointment {
+    padding: 0 1.5rem;
+  }
+
+  .appointment__container--wrap {
+    width: 100%;
+  }
+
+  .appointment__container--wrap input {
+    width: 100%;
+  }
 }
